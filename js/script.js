@@ -2,7 +2,7 @@ var number1 = parseInt(prompt("Enter a number:"));
 var number2 = parseInt(prompt("Enter another number:"));
 
 //add function
-add = function(number1, number2) {
+var add = function(number1, number2) {
   return number1 + number2;
 }
 
@@ -29,3 +29,15 @@ var result3 = multiply(number1, number2);
 alert(result3);
 var result4 = divide(number1, number2);
 alert(result4);
+
+
+//BMI calculation
+var weight = parseFloat(prompt("What is your weight (in kg)?"));
+var height = parseFloat(prompt("What is your height (in meter)?"));
+
+var BMI = parseFloat(weight/(height*height));
+alert(BMI)
+
+var t_celsius = parseInt(prompt("Write temperature in C?"));
+var t_fahrenheit = 32 + t_celsius*9/5;
+alert(t_fahrenheit)
